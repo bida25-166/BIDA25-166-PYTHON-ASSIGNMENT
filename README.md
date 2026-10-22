@@ -1,4 +1,4 @@
-BIDA25-166 ASSIGNMENT README
+<img width="1511" height="2268" alt="image" src="https://github.com/user-attachments/assets/466009e9-4584-47fb-b326-4003cc1da43c" />BIDA25-166 ASSIGNMENT README
 PROJECT OVERVIEW
 Student Grade Management System
 This is a python-based grading system that is gradually developed. The grading system allows users to store and manage student records through operations such as adding, updating, removing and searching for students. The purpose of the system is to showcase the use and understanding of lists, tuples and dictionaries to manage and process data.
@@ -175,39 +175,37 @@ Try/except blocks were used to handle errors caused by;
 
 
 
-SECTION E& F COMPREHENSIVE TESTING
-1.	Functional testing
+SECTION E & F COMPREHENSIVE TESTING
+1. Functional Testing
+Test Case	Input	Expected Result	Actual Result	Status
+Add Student	Ruth, 90, 85, 70	Student added successfully	Student added successfully	PASS
+Search Student	Ruth	Display student details	Student details displayed	PASS
+Remove Student	Ruth	Student removed successfully	Student removed successfully	PASS
+Sort Students	Multiple student records	Students sorted by average	Students sorted by average	PASS
+2. Validation Testing
+Test Case	Input	Expected Result	Actual Result	Status
+Invalid Grade	150	Grade must be between 0 and 100	Grade must be between 0 and 100	PASS
+Negative Grade	-5	Grade must be between 0 and 100	Grade must be between 0 and 100	PASS
+Non-numeric Grade	abc	ERROR: non-numeric grade entered	ERROR: non-numeric grade entered	PASS
+Duplicate Student Name	Ruth (already exists)	Duplicate student name not allowed	Duplicate student name not allowed	PASS
+3. Exception Handling Testing
+Test Case	Input	Expected Result	Actual Result	Status
+Search for Non-existent Student	Joshua (does not exist in records)	StudentNotFoundError: Student not found	Student not found	PASS
+Remove Non-existent Student	Joshua (does not exist in records)	StudentNotFoundError: Student not found	Student not found	PASS
+4. Edge Case Testing
+Test Case	Expected Result	Actual Result	Status
+Student with No Grades	Average = 0	Average = 0	PASS
+Large Number of Students	Program remains responsive	Program remains responsive	PASS
+Special Characters in Name	Accepted as valid names	Successfully accepted	PASS
+The system was tested using functional, validation, exception-handling, and edge-case test scenarios. The program recovered from invalid inputs without crashing and behaved as expected.
 
-TEST CASE	   INPUT	                 EXPECTED RESULT	                   ACTUAL RESULT	                STATUS
-Add student	   Ruth, 90, 85, 70	         “Student added successfully”	       “Student added successfully”      pass
-Search student Ruth	                     Display student details	           Student details displayed	     pass
-Remove student Ruth	                     “Student removed successfully”	       “Student removed successfully”	 pass
-Sort students  Multiple student records	 Students sorted by average	           Students sorted by average        Pass
-
-
-2.	Validation Testing
-
-TEST CASE	              INPUT	                  EXPECTED RESULT    	                ACTUAL RESULT                    STATUS         
-Invalid grade	          150	                “Grade must be between 0 and 100”	 “Grade must be between 0 and 100”	    PASS
-Negative grade       	  -5	                “Grade must be between 0 and 100”	 “Grade must be between 0 and 100”	    PASS
-Non-numeric grade	      abc	                “ERROR: non-numeric grade entered”	 “ERROR: non-numeric grade entered”	    PASS
-Duplicate student name	  Ruth (already exists)	“Duplicate student name not allowed” “Duplicate student name not allowed”	PASS
-
-
-3.	Exception Handling Testing
-
-TEST CASE	                    INPUT	                            EXPECTED RESULT	                        ACTUAL RESULT STATUS                                                  
-Search for non-existent student	Joshua (does not exist in records)   StudentNotFoundError“Student not found”  “Student not found”	PASS
-Remove non-existent student	    Joshua (does not exist in records)   StudentNotFoundError“Student not found”  “Student not found”	PASS
-
-
-4.	 Edge case testing
-
-TEST CASE	             EXPECTED RESULT	             ACTUAL RESULT	                STATUS
-Student with no grades	    Average = 0	                 Average = 0	                PASS
-Large number of students    Program remains responsive	 Program remains responsive	    PASS
-Special characters in name  Accepted as valid names	     Successfully accepted    	    PASS
-
+TESTING SUMMARY
+Test Case	Expected Result	Actual Result	Status
+Add Student	Student successfully added	Student successfully added	PASS
+Update Grade	Grade successfully updated	Grade successfully updated	PASS
+Remove Student	Student successfully removed	Student successfully removed	PASS
+Search Student	Student grades displayed	Student grades displayed	PASS
+Invalid Grade (-1/150)	Invalid subject grade	Invalid subject grade	PASS
 The system was thoroughly tested, including unit tests for individual methods and integration tests for the overall system functionality. The program recovered successfully from invalid inputs without crashing and behaved as expected.
 
 
@@ -222,15 +220,13 @@ LIMITATIONS
 •	Names and subject names are case sensitive
 •	Data is only stored when the program is running
 
-
-
 TESTING SUMMARY
-TEST CASE	             EXPECTED RESULT	          ACTUAL RESULT	                 STATUS
-Add student           	Student successfully added	  Student successfully added	 PASS
-Update Grade	        Grade successfully upgraded	  Grade successfully updated	 PASS
-Remove Student	        Student successfully removed  Student successfully removed	 PASS
-Search student      	Student grades displayed	  Student grades displayed	     PASS
-Invalid grade (-1/150)	Invalid subject grade         Invalid subject grade	         PASS
+Test Case	Expected Result	Actual Result	Status
+Add Student	Student successfully added	Student successfully added	PASS
+Update Grade	Grade successfully updated	Grade successfully updated	PASS
+Remove Student	Student successfully removed	Student successfully removed	PASS
+Search Student	Student grades displayed	Student grades displayed	PASS
+Invalid Grade (-1/150)	Invalid Math grade, Invalid English grade, Invalid Science grade	Invalid Math grade, Invalid English grade, Invalid Science grade	PASS
 
 KNOWN ISSUES
 •	Floating point averages may produce long decimals
@@ -240,4 +236,5 @@ KNOWN ISSUES
 REFERENCES
 W3SCHOOLS. Python tutorial available at Python Tutorial
 Python lecture slides
+
 
