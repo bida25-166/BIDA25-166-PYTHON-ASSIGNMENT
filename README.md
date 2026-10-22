@@ -1,4 +1,3 @@
-<img width="1511" height="2268" alt="image" src="https://github.com/user-attachments/assets/466009e9-4584-47fb-b326-4003cc1da43c" />BIDA25-166 ASSIGNMENT README
 PROJECT OVERVIEW
 Student Grade Management System
 This is a python-based grading system that is gradually developed. The grading system allows users to store and manage student records through operations such as adding, updating, removing and searching for students. The purpose of the system is to showcase the use and understanding of lists, tuples and dictionaries to manage and process data.
